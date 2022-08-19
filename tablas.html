@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>        
+        <section>
+            <h2>tablas</h2>
+            <table border="1">
+                <!--columnas-->
+                <tr>
+                    <th>
+                        col1
+                    </th>
+                    <th>
+                        col2
+                    </th>
+                    <th>
+                        colN
+                    </th>
+                </tr>
+                <!--filas-->
+                <tr>
+                    <td>
+                        col1 fila 1
+                    </td>
+                    <td>
+                        col2 fila 1
+                    </td>
+                    <td>
+                        col3 fila 1
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        col1 fila 2
+                    </td>
+                    <td>
+                        col2 fila 2
+                    </td>
+                    <td>
+                        col3 fila 2
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        col1 fila2, pero ocupa 3 columnas 
+                    </td>    
+                </tr>
+                <tr>
+                    <td>
+                        col1 fila4
+                    </td>
+                    <td colspan="2">
+                        col1 fila 2, pero ocupa 2 columnas 
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <a href="Index.html?param=valor">Volver</a>
+            
+        <form action="Index.html" method="get">
+            <input type="hidden" name="param" value="valor">
+            <button>
+                volver
+            </button>
+        </form>
+    </main>
+</body>
+</html>
