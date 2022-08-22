@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 1 - forma interna de usar css-->
+    <style>
+        /* comentario valido en css
+        todo lo que este en esta zona */
+    h1{
+            color:#ab2525;
+            font-size: 40px;
+        }
+               
+        /*estructura
+        selector {
+            propiedad: valor
+        }
+        */
+
+        /*agregar otra clase
+        LoweCamelCase
+        */
+        .otraClaseConFondoVerde {
+            background-color: green;
+        }
+
+        section {
+            background-color: yellow;
+        }
+
+        /*por ID*/
+        #btn {
+            background-color: aqua;
+
+        }  /*no sirve*/
+
+        .btn {
+            background-color: aqua;
+
+        }
+    </style>
+
+    <!-- forma externa-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--
+        2-forma:INLINE
+        aplicar estilo en linea
+        usando el atributo style
+    -->
+    <section class="sectionPrincipal">
+    <h1 style="color:green">css</h1>
+    <h1>hola</h1>
+    <h2>Soy un subtitulo h2</h2>
+
+    <p Style="font-weight: bolder;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor minus libero nihil odit aut temporibus ea asperiores tempora praesentium est. Porro vero nemo totam voluptatem delectus fugit consequuntur reprehenderit adipisci.
+    </p>
+    </section>
+
+    <section class="otraClaseConFondoVerde">
+        <h1>Hola</h1>
+    </section>
+
+    <section>
+        <form action="alta.html">
+            <label for="nombre">Nombre:</label>
+            <input name="nombre" type="text" maxlength="50" required>
+
+            <button id="btn">
+                Enviar
+            </button>
+
+            <button class="btn">
+                Enviar2
+            </button>
+
+            <button class="btn">
+                Enviar3
+            </button>
+        </form>
+    </section>
+</body>
+</html>
