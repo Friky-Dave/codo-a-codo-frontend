@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        /*atributo*/
+        /*tiene que ser igual*/
+        [id="idJS"] {
+            color:blue;
+            text-transform: uppercase /* | lowercase | uppercase */;
+        }
+         
+        /*que contenga*/
+        [id*="css"] {
+            color: rgb(217, 220, 36)
+        }
+
+        /*inicia con*/
+        [id^="html"] {
+            font-style: italic;
+        }
+
+        /*termine con*/
+        [id$="Java"] {
+            text-transform: lowercase;
+        }
+
+        [atr="atrvalor"] {
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="html" 
+                 style="background-color: yellowgreen;" 
+                 id="htmlid">
+                    <h2>HTML</h2>
+                    <p>Texto de primer div</p>
+        </section>
+        <section class="css" id="cssID" atr="atrvalor">
+            <h3>CSS</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro alias eum sint, fugit quas voluptatem! Sapiente laborum tempora architecto a nostrum autem. Odit, quos nemo sit accusamus cupiditate perferendis obcaecati!</p>
+        </section>
+        <section id="idJS">
+            <h4>JS</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, officiis aperiam porro adipisci consequuntur reiciendis, quis totam ad delectus maxime eveniet debitis, suscipit ratione voluptatibus aliquid voluptate officia dicta obcaecati?</p>
+        </section>
+        <section id="idJava">
+            <h4>JAVA</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur necessitatibus molestias suscipit excepturi inventore minima et sunt, itaque natus officiis voluptatem a dolorem quo hic aperiam magnam ipsa animi iusto.Heroes vs Villains Last Stand</p>
+        </section>
+    </main>
+    
+</body>
+</html>
