@@ -96,9 +96,11 @@ section a {
     line-height: 25px;
     
 }
+
 section a:hover {
     font-weight: bolder;
 }
+ 
 section a:active {
     opacity: 0.5;
 }
@@ -108,3 +110,5 @@ section a:active {
         flex-direction: column;
     }
 }
+
+
