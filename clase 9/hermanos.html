@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body > p{
+            color: red;
+        }
+        body > div > p {
+            color: aqua;
+        }
+        section > h1 ~ p {
+            color: green;
+        }
+        /*especifidad, herencia*/
+        section ol li:first-child {
+            color:blue !important
+        }
+        section ol li:last child {
+            color: green; !important
+        }
+        section ol li:nth-child(odd) {
+            color:rgb(255, 123, 0)
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!--hermanos-->
+        <p>carlos</p>
+        <p>hernan</p>
+    <!--P es hijo de div-->
+    </div>
+          <p>
+            texto
+          </p>
+
+    <!--hermanos-->
+    <section>
+        <h1>LOS HERMANOS</h1>
+        <p>carlos</p><!--hermano adyasente de h2, ES EL PRIMERO-->
+        <p>hernan</p><!--es hermano de h, pero no adyacente-->
+        <p>jose</p>
+        <p>pedro</p><!--ES EL ULTIMO-->
+    </section>   
+    
+    <section>
+        <ol>
+            <li>h1</li><!--first child-->
+            <li>h2</li><!--nth-child-->
+            <li>h3</li>
+            <li>h4</li>
+            <li>h5</li><!--last child-->
+        </ol>
+    </section>
+    
+</body>
+</html>

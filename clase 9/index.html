@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*selector hijo*/
+        p > strong {
+            color: red
+        }
+        div > img {
+            width: 300px;
+        }
+        div.div1 p {
+            font-size: 15 px;
+        }
+        /*hermanos ady tag + tag*/
+        h1 +p {
+            font-weight: bolder;
+        }
+        /* hermano general*/
+        h2 ~ p {
+            height: 30px;
+            background-color: aqua;
+        }
+        /*pseudoclases*/
+        a:visited {
+            color: rgb(42, 165, 85)
+        }
+        a:active {
+            color:turquoise;
+        }
+        
+        h1:hover {
+            font-family: verdana;
+        }
+        img:hover {
+            width: 310px;
+            border: 5px solid yellow
+        }
+         /*hermanos +ady o hermanos generales */
+        h1 ~ p:hover {
+            font-size: 20px;
+        }
+        input:checked {
+            margin: 10px;
+        }
+        div.primerhijo {
+            padding-bottom: 25px;
+            text-align: center;
+
+        }
+        div.primerhijo p{
+            display: inline;
+        }
+        /* first child*/
+        div.primerhijo p:first-child {
+            color: blueviolet;
+            /*
+            font-size: 20px;
+            font-weight: bolder;
+            */
+        }
+
+        /* last child*/
+        div.primerhijo p:last-child {
+            color: rgb(43, 131, 226);
+            /*
+            font-size: 20px;
+            font-weight: bolder;
+            */
+        }
+
+        /*nth*/
+        ol li:nth-child(1) {
+            color:antiquewhite
+
+        }
+    </style>
+</head>
+<body>
+       <!--hijo de tag-->
+    <p>
+        selector de hijos<strong> PADRE > HIJO</strong>
+    </p>
+
+    <p>
+        texto <strong>texto strong</strong> sigue el texto
+    </p>
+
+    <div class="div1">
+        <img src="./scale.jpg">
+        <p>parrafo</p>
+        <p>parrafo</p>
+    </div>
+
+    <!--hermanos adyascentes-->
+    <div>
+        <h1>hermanos adyascentes</h1>
+        <p>
+            texto 1
+        </p>
+        <p>
+            texto 2
+        </p>
+        <p>
+            texto 3
+        </p>
+    </div>
+    <div>
+        <h2>hermanos generales</h2>
+        <p>
+            hermano 1 de h2
+        </p>
+        <p>
+           hermano 2 de h2 
+        </p>
+    </div>
+    <!--pseudoclases-->
+    <ul>
+        <li>
+            <a href="http://www.google.com">Google</a>
+        </li>
+        <li>
+            <a href="http://www.facebook.com">Facebook</a>
+        </li>    
+    </ul>
+    <input type="checkbox">
+
+    <!--first child-->
+    <div class="primerhijo">
+        <p>
+            p1
+        </p>
+        <p>
+            p2
+        </p>
+        <p>
+            p3
+        </p>
+        <p>
+            p4
+        </p>
+    </div>
+
+    <ol>
+        <li>primero</li>
+        <li>segundo</li>
+        <li>tercero</li>
+        <li>cuarto</li>
+        <li>quinto</li>
+        <li>sexto</li>
+    </ol>
+
+    <table>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

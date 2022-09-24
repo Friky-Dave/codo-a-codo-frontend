@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase10 - Flexbox</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <style>
+        .menu-container {
+            background-color: beige;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+            padding-left: 10px;            
+        }
+
+        .menu-container ul {
+            list-style-type: none;
+        }
+
+        .menu-container ul li {
+            display: inline-block;
+            padding: 5px;
+        }
+
+        .menu-container a{
+            text-decoration: none;
+        }
+
+        .menu-container ul a {            
+            width: 70px;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .menuItem {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header img {
+            width: 100%;
+            height: 650px;
+        }
+        header nav{
+           position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="menu-container">
+            <a href="#">home</a>
+            <ul>                
+                <li>
+                    <span class="menuItem">
+                         <a href="#">link 1</a>
+                    </span>
+                </li>
+                <li>
+                    <span class="menuItem">
+                        <a href="#">link 2</a>
+                    </span>
+                </li>
+            </ul>
+        </nav>
+            <img src="./assets/img/imagen.jpg">
+    </header>
+    <main>
+        <!--
+        <aside>
+            <ul>
+                <li>
+                    <a>Link1</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a>Link1</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a>Link1</a>
+                </li>
+            </ul>
+            <div>
+                <h2>info</h2>
+            </div>
+        </aside>
+        -->
+        <section id="sec1">
+            <div class="content-text">
+                <h2>Section 1</h2>
+                <!--lore10: crea lorem de 10 palabras-->
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, corporis.</p>
+                <a href="#sec2">Section 1</a>
+            </div>
+            <img src="./assets/img/1.svg">
+        </section>
+        <section id="sec2">
+            <div class="content-text">
+                <h2>Section 2</h2>
+                <!--lore10: crea lorem de 10 palabras-->
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, corporis.</p>
+                <a href="#sec3">Section 2</a>
+            </div>
+            <img src="./assets/img/2.svg">
+        </section>
+        <section id="sec3">
+            <div class="content-text">
+                <h2>Section 3</h2>
+                <!--lore10: crea lorem de 10 palabras-->
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, corporis.</p>
+                <a href="#sec1">Section 3</a>
+            </div>
+            <img src="./assets/img/3.svg">
+        </section>
+    </main>
+</body>
+</html>
